@@ -4,27 +4,12 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core">
 
-	<ui:define name="information">
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h4 class="panel-title">#{usuario.nome}</h4>
-			</div>
-			<div class="panel-body">
-				<img
-					src="#{facesContext.externalContext.requestContextPath}/resources/images/noavatar.jpg"
-					alt="no-avatar" />
-				<h5>Matrícula: #{usuario.login}</h5>
-				<h5>#{usuario.email}</h5>
-			</div>
-
-		</div>
-	</ui:define>
 	<ui:define name="menu1">
 		<ui:include src="/WEB-INF/template/menuAluno.xhtml" />
 	</ui:define>
 	<ui:define name="main1">
-		<h1>Bem Vindo!</h1>
-		<h3>Game desenvolvido para a disciplina de Empreendedorismo</h3>
+		<h1>Bem Vindo #{usuario.nome}!</h1>
+		<h3>Gestor de Projetos desenvolvido para a disciplina de Reúso de Software</h3>
 	</ui:define>
 
 </ui:composition>

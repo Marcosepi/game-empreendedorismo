@@ -5,30 +5,15 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui">
 
-	<ui:define name="information">
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h4 class="panel-title">#{usuario.nome}</h4>
-			</div>
-			<div class="panel-body">
-				<img
-					src="#{facesContext.externalContext.requestContextPath}/resources/images/noavatar.jpg"
-					alt="no-avatar" />
-				<h5>Matrícula: #{usuario.login}</h5>
-				<h5>#{usuario.email}</h5>
-			</div>
-		</div>
-	</ui:define>
 
 	<ui:define name="menu1">
 		<ui:include src="/WEB-INF/template/menuAluno.xhtml" />
 	</ui:define>
 
 	<ui:define name="main1">
-		<h3 style="margin-left: 0px; margin-top: 0px;">Equipes
-			Cadastradas</h3>
+		<h3 style="margin-left: 0px; margin-top: 0px;">Meus Projetos</h3>
 		<span class="label label-default">
-			Clique em uma equipe para visualizar opções
+			Clique em um projeto para visualizar opções
 		</span>	
 		<div class="tabbable tabs-left">
 			<ul class="nav nav-tabs">
